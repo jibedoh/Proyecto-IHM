@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Under Armour Clone</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+                "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+            }
+        }
+    </script>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="intro-overlay">
+        <div id="three-container"></div>
+        <div class="intro-content">
+            <h1 class="intro-title">UNDER ARMOUR</h1>
+            <button id="btn-entrar">EXPLORAR COLECCIÓN</button>
+        </div>
+    </div>
+
+
+    <div class="barra-promo-superior">
+        <div class="item-promo">
+            <i class="fa-regular fa-credit-card"></i> Paga hasta en 6 cuotas con ADDI
+        </div>
+        <div class="item-promo promo-centro">
+            <i class="fa-solid fa-arrows-rotate"></i> Cambios fáciles y sin costo a 90 días
+        </div>
+        <div class="item-promo promo-derecha">
+            <i class="fa-solid fa-truck"></i> Compra y paga en casa
+            <span class="selector-pais">
+                <img src="https://flagcdn.com/w20/co.png" alt="Colombia flag" class="icono-bandera"> CO
+            </span>
+        </div>
+    </div>
+
+
+    <header class="encabezado-principal">
+        <div class="navegacion-izquierda">
+            <a href="#" class="marca-nav">
+
+                <img src="./assets/imagenes/logo.png" alt="Logo Under Armour" class="imagen-logo">
+            </a>
+        </div>
+
+        <nav class="enlaces-nav">
+            <a href="#">New 🔥</a>
+            <a href="#">Hombre</a>
+            <a href="#">Mujer</a>
+            <a href="#">Niños</a>
+            <a href="#">Tenis</a>
+            <a href="#">Accesorios</a>
+            <a href="#">Primeras Capas</a>
+            <a href="#" class="nav-ofertas">Outlet</a>
+        </nav>
+
+        <div class="acciones-encabezado">
+            <div class="barra-busqueda">
+                <input type="text" placeholder="¿Qué buscas?">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <a href="#" class="enlace-icono"><i class="fa-solid fa-bag-shopping"></i></a>
+            <a href="#" class="enlace-icono"><i class="fa-regular fa-user"></i></a>
+        </div>
+    </header>
+
+    <div class="promo-subencabezado">
+        Por la compra de un producto de nueva colección obtén 20% extra en catalogo de outlet. <a href="#">Ver
+            catálogo</a>
+    </div>
+
+
+    <main class="seccion-hero">
+        <img src="./assets/imagenes/Hero.webp" alt="UA Velociti Distance Hero Image" class="imagen-hero">
+
+    </main>
+
+
+    <section class="seccion-categorias">
+        <a href="#" class="tarjeta-categoria">
+            <div class="contenedor-img-categoria">
+                <img src="./assets/imagenes/Running.webp" alt="Running Image" class="imagen-categoria">
+            </div>
+            <h3 class="titulo-categoria">Running</h3>
+        </a>
+        <a href="#" class="tarjeta-categoria">
+            <div class="contenedor-img-categoria">
+                <img src="./assets/imagenes/Training.webp" alt="Training Image" class="imagen-categoria">
+            </div>
+            <h3 class="titulo-categoria">Training</h3>
+        </a>
+        <a href="#" class="tarjeta-categoria">
+            <div class="contenedor-img-categoria">
+                <img src="./assets/imagenes/Sportstyle.webp" alt="Sportstyle Image" class="imagen-categoria">
+            </div>
+            <h3 class="titulo-categoria">Sportstyle</h3>
+        </a>
+        <a href="#" class="tarjeta-categoria">
+            <div class="contenedor-img-categoria">
+                <img src="./assets/imagenes/Tenis.webp" alt="Tenis Image" class="imagen-categoria">
+            </div>
+            <h3 class="titulo-categoria">Tenis</h3>
+        </a>
+    </section>
+
+    <section class="seccion-banner-promo">
+        <img src="./assets/imagenes/Always...webp" alt="Always on Comfort Banner" class="imagen-banner-promo">
+    </section>
+
+
+    <section class="seccion-carrusel-productos">
+        <button class="flecha-carrusel flecha-izquierda"><i class="fa-solid fa-chevron-left"></i></button>
+
+        <div class="cuadricula-productos">
+
+            <div class="tarjeta-producto">
+                <div class="img-producto">
+                    <img src="./assets/imagenes/zapato1.png" alt="Zapato 1" class="img-default">
+                    <img src="./assets/imagenes/zapato1_2.png" alt="zapato1" class="img-hover">
+                    <button class="btn-agregar-carrito"><i class="fa-solid fa-bag-shopping"></i></button>
+                    <div class="insignia-mas"><i class="fa-solid fa-plus"></i></div>
+                </div>
+                <h4 class="titulo-producto">Tenis Para Running Ua Assert 11 Hombre</h4>
+                <p class="precio-producto">$ 349.900</p>
+            </div>
+
+            <div class="tarjeta-producto">
+                <div class="img-producto">
+                    <img src="./assets/imagenes/Zapato 2.png" alt="Zapato 2" class="img-default">
+                    <img src="./assets/imagenes/Zapato 2_2.png" alt="zapato2" class="img-hover">
+                    <button class="btn-agregar-carrito"><i class="fa-solid fa-bag-shopping"></i></button>
+                    <div class="insignia-mas"><i class="fa-solid fa-plus"></i></div>
+                </div>
+                <h4 class="titulo-producto">Tenis Para Running Ua Assert 11 Hombre</h4>
+                <p class="precio-producto">$ 349.900</p>
+            </div>
+
+            <div class="tarjeta-producto">
+                <div class="img-producto">
+                    <img src="./assets/imagenes/zapato3.png" alt="Zapato 3" class="img-default">
+                    <img src="./assets/imagenes/Zapato3_2.png" alt="zapato3" class="img-hover">
+                    <button class="btn-agregar-carrito"><i class="fa-solid fa-bag-shopping"></i></button>
+                    <div class="insignia-mas"><i class="fa-solid fa-plus"></i></div>
+                </div>
+                <h4 class="titulo-producto">Tenis Para Running Ua Assert 11 Hombre</h4>
+                <p class="precio-producto">$ 349.900</p>
+            </div>
+
+            <div class="tarjeta-producto">
+                <div class="img-producto">
+                    <img src="./assets/imagenes/zapato4.png" alt="Zapato 4" class="img-default">
+                    <img src="./assets/imagenes/Zapato4_2.png" alt="zapato4" class="img-hover">
+                    <button class="btn-agregar-carrito"><i class="fa-solid fa-bag-shopping"></i></button>
+                    <div class="insignia-mas"><i class="fa-solid fa-plus"></i></div>
+                </div>
+                <h4 class="titulo-producto">Tenis Para Running Ua Assert 11 Hombre</h4>
+                <p class="precio-producto">$ 349.900</p>
+            </div>
+        </div>
+
+        <button class="flecha-carrusel flecha-derecha"><i class="fa-solid fa-chevron-right"></i></button>
+
+        <div class="puntos-carrusel">
+            <span class="punto activo"></span>
+            <span class="punto"></span>
+            <span class="punto"></span>
+        </div>
+    </section>
+
+    <section class="banner3">
+        <img src="./assets/imagenes/banner1.webp" alt="Banner3">
+    </section>
+
+    <section class="seccion-carrusel-productos">
+        <button class="flecha-carrusel flecha-izquierda"><i class="fa-solid fa-chevron-left"></i></button>
+
+        <div class="cuadricula-productos">
+
+            <div class="tarjeta-producto">
+                <div class="img-producto">
+                    <img src="./assets/imagenes/tenni1.webp" alt="tenni1">
+                    <button class="btn-agregar-carrito"><i class="fa-solid fa-bag-shopping"></i></button>
+                    <div class="insignia-mas"><i class="fa-solid fa-plus"></i></div>
+                </div>
+                <h4 class="titulo-producto">Tenis Para Running Ua Assert 11 Hombre</h4>
+                <p class="precio-producto">$ 349.900</p>
+            </div>
+
+            <div class="tarjeta-producto">
+                <div class="img-producto">
+                    <img src="./assets/imagenes/tenni2.webp" alt="tenni2">
+                    <button class="btn-agregar-carrito"><i class="fa-solid fa-bag-shopping"></i></button>
+                    <div class="insignia-mas"><i class="fa-solid fa-plus"></i></div>
+                </div>
+                <h4 class="titulo-producto">Tenis Para Running Ua Assert 11 Hombre</h4>
+                <p class="precio-producto">$ 349.900</p>
+            </div>
+
+            <div class="tarjeta-producto">
+                <div class="img-producto">
+                    <img src="./assets/imagenes/tenni3.webp" alt="tenni3">
+                    <button class="btn-agregar-carrito"><i class="fa-solid fa-bag-shopping"></i></button>
+                    <div class="insignia-mas"><i class="fa-solid fa-plus"></i></div>
+                </div>
+                <h4 class="titulo-producto">Tenis Para Running Ua Assert 11 Hombre</h4>
+                <p class="precio-producto">$ 349.900</p>
+            </div>
+
+            <div class="tarjeta-producto">
+                <div class="img-producto">
+                    <img src="./assets/imagenes/tenni4.webp" alt="tenni4" class="img-default">
+                    <img src="./assets/imagenes/tenni4_2.webp" alt="Tenni 4 Vista 2" class="img-hover">
+                    <button class="btn-agregar-carrito"><i class="fa-solid fa-bag-shopping"></i></button>
+                    <div class="insignia-mas"><i class="fa-solid fa-plus"></i></div>
+                </div>
+                <h4 class="titulo-producto">Tenis Para Running Ua Assert 11 Hombre</h4>
+                <p class="precio-producto">$ 349.900</p>
+            </div>
+        </div>
+
+        <button class="flecha-carrusel flecha-derecha"><i class="fa-solid fa-chevron-right"></i></button>
+
+        <div class="puntos-carrusel">
+            <span class="punto activo"></span>
+            <span class="punto"></span>
+        </div>
+    </section>
+
+    <section class="BannersFinales">
+        <div class="banner">
+            <img src="./assets/imagenes/bannerF1.webp" alt="img1Banners">
+            <h3>VALSETZ</h3>
+        </div>
+
+        <div class="banner">
+            <img src="./assets/imagenes/bannerF2.webp" alt="img2Banners">
+            <h3>CROSSBACK BRA</h3>
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <img src="./assets/imagenes/UnderArmour.svg" alt="Under Armour" class="footer-logo">
+                <h2>Mantente Conectado</h2>
+                <form class="footer-form">
+                    <div class="input-group">
+                        <label>Correo electrónico<span>*</span></label>
+                        <input type="email" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Mes de tu Cumpleaños</label>
+                        <select>
+                            <option>Selecciona</option>
+                            <option>Enero</option>
+                            <option>Febrero</option>
+                            <option>Marzo</option>
+                            <option>Abril</option>
+                            <option>Mayo</option>
+                            <option>Junio</option>
+                            <option>Julio</option>
+                            <option>Agosto</option>
+                            <option>Septiembre</option>
+                            <option>Octubre</option>
+                            <option>Noviembre</option>
+                            <option>Diciembre</option>
+                        </select>
+                    </div>
+
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="privacy">
+                        <label for="privacy">He leído y acepto las <a href="#">Políticas de
+                                privacidad</a><span>*</span></label>
+                    </div>
+
+                    <div class="recaptcha-placeholder">
+                        <p>protegido por <b>reCAPTCHA</b><br><span><a href="#">Privacidad</a> - <a
+                                    href="#">Condiciones</a></span></p>
+                        <img src="https://www.gstatic.com/recaptcha/api2/logo_48.png" alt="captcha">
+
+                    </div>
+
+                    <button type="submit" class="btn-enviar">Enviar</button>
+                </form>
+
+                <img src="./assets/imagenes/UnderArmourLogoblue.webp" alt="LogoBlue" class="LogoBlue">
+                <div class="footer-bottom">
+                    <div class="payment-methods">
+                        <p>Medios de Pago</p>
+                        <img src="./assets/imagenes/medios-pago.webp" alt="Pagos" class="img-pagos">
+                    </div>
+                    <div class="legal-info">
+                        <p>© 2021 Under Armour®, Inc. Todos los derechos reservados.</p>
+                        <p>Teléfono servicio al cliente: 018000423625</p>
+                        <p>FORUS COLOMBIA S.A.S. NOTIFICACIONES JUDICIALES: <a
+                                href="mailto:notificaciones@forus.com.co">notificaciones@forus.com.co</a> | Av. Carrera
+                            45 N° 108-27 BOGOTÁ COLOMBIA</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="footer-right">
+                <div class="footer-column">
+                    <h3>Servicio al consumidor</h3>
+                    <ul>
+                        <li><a href="#">Sigue tu compra</a></li>
+                        <li><a href="#">Cambios y Devoluciones</a></li>
+                        <li><a href="#">Tiendas</a></li>
+                        <li><a href="#">Contáctanos</a></li>
+                        <li><a href="#">Sigue tu PQRS</a></li>
+                        <li><a href="#">Actualiza tus Datos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Términos y Condiciones</a></li>
+                        <li><a href="#">Políticas de privacidad</a></li>
+                        <li><a href="#">Políticas de despachos</a></li>
+                        <li><a href="#">Políticas de Cambios y Devoluciones</a></li>
+                        <li><a href="#">Superintendencia de Industria y Comercio</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Cuenta</h3>
+                    <ul>
+                        <li><a href="#">Mi cuenta</a></li>
+                        <li><a href="#">¿Dónde viene mi compra?</a></li>
+                        <li><a href="#">Historial de compras</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Redes Sociales</h3>
+                    <ul class="social-links">
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+                        <li><a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
+
+    <script src="funcionalidades.js"></script>
+    <script type="module" src="zapatos.js"></script>
+    <script type="module" src="intro.js"></script>
+</body>
+
+</html>
